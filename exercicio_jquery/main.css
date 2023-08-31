@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(236, 225, 236);
+}
+
+header {
+    background-color: rgb(147, 96, 243);
+    padding: 16px 0;
+    text-align: center;
+    color: white;    
+}
+
+form {
+    margin-top: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+input {
+    margin-right: 16px;  
+    border: none;  
+}
+
+input:focus {
+    outline: 2px solid rgb(110, 45, 230);
+}
+
+button {
+    border: none;
+    border-radius: 3px;
+    background-color:rgb(110, 45, 230);
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+input,
+button {
+    padding: 8px;
+    font-size: 16px;
+}
+
+.lista-de-tarefas {
+    list-style-position: inside;       
+    max-width: 390px;
+    margin: 0 auto;
+}
+
+.tarefa-feita {
+    text-decoration: line-through;
+}
+
+.lista-de-tarefas li {
+    margin-top: 16px;
+    cursor: pointer;
+}
