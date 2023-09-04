@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(210, 210, 230);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 360px;
+    padding-top: 24px;
+}
+
+form {
+    margin-top: 24px;
+    width: 100%;
+}
+
+form label{
+    display: block;
+}
+
+.campo-form {
+    display: block;
+    justify-content: center;
+    margin-bottom: 16px;
+    
+}
+
+.campo-form label {
+    margin-right: 16px;
+}
+
+.campo-form input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+}
+
+form button {
+    width: 30%;
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(123, 123, 161);
+}
