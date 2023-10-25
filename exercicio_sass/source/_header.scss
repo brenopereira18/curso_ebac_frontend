@@ -1,0 +1,30 @@
+@import './variaveis';
+
+header {
+    background-color: $cor-secundaria;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;        
+
+        .menu {
+            display: flex;
+
+            li {
+                font-weight: bold;
+                margin-left: 24px;
+                list-style: none;
+
+                a {
+                    color: $cor-primaria;
+                    text-decoration: none;
+                }
+            }
+        }
+    }    
+}
