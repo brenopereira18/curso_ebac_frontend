@@ -1,0 +1,80 @@
+@import 'maps.less';
+@mobileBreakPoint: ~"(max-width: 767px)";
+@tabletBreakPoint: ~"(min-width: 768px) and (max-width: 1023px)";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: @cores[corDeFundo];
+    color: @cores[corTexto];
+}
+
+.container {
+    text-align: center;
+    margin-top: 6em;
+
+    header {
+        margin-bottom: 2em;
+        img {
+            border-radius: 50%;
+        }
+
+        .profile-name {
+            font-size: 16px;
+            padding: 0.5em 0;
+        }
+
+        .profile-profession {
+            font-size: 14px;
+        }
+    }
+
+    nav {
+        margin: 0 auto;
+        max-width: 540px;
+        width: 100%;
+        
+        
+        li {
+            list-style: none;
+            padding-bottom: 0.7em; 
+                     
+            
+            a {
+                text-decoration: none;
+                color: @cores[corTexto];
+                background-color: @cores[corBotao];                
+                display: block;
+                padding: 0.5em;
+                border: 2px solid @cores[corBotao];
+                border-radius: 30px;                                     
+
+                &:hover {
+                    background-color: transparent;
+                    color: @cores[corBotao];
+                    transform: scale(1.1);
+                }
+
+                .bi {
+                    margin-right: 0.5em;
+                }
+
+            }
+        }
+
+        @media @mobileBreakPoint {
+            max-width: 340px;
+            width: 100%;
+        }
+
+        @media @tabletBreakPoint {
+            max-width: 420px;
+            width: 100%;
+        }
+    }
+}
