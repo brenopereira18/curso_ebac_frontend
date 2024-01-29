@@ -22,9 +22,7 @@ let alunosDaTurma = [
 ]
 
 let alunosAcimaDaMedia = alunosDaTurma.filter(aluno => {
-    if (aluno.nota >= 6) {
-        return aluno.nome
-    }
+    return aluno.nota >= 6
 })
 
 console.log(alunosAcimaDaMedia)
