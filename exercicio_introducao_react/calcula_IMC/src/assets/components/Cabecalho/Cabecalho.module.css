@@ -1,0 +1,20 @@
+.header {    
+    padding-top: 48px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;   
+}
+
+.title {
+    padding: 28px 0 0;
+    text-align: center;
+    font-family: "Quicksand", sans-serif; 
+    border-bottom: 1px solid #005c8a;  
+    color: #005c8a; 
+}
+
+@media (max-width: 767px) {
+    .header {
+        max-width: 300px;        
+    }    
+}
